@@ -1,0 +1,186 @@
+.App {
+  display: grid;
+  size: 100%;
+  height: 100vh;
+  /* width: 100%; */
+  color: white;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  text-align: center;
+  background-size: cover;
+  background-image: url('https://render.worldofwarcraft.com/profile-backgrounds/v2/armory_bg_class_warrior.jpg');
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.q4{
+  display: block
+}
+#Equipment{
+  outline: 2px solid white;
+  grid-column: 2 / 8;
+  grid-row: 2 / 9;
+  max-height: 100%;
+}
+#EquipmentSlots{
+  
+  display: grid;
+  grid-template-columns: 5% repeat(4, auto) 5%;
+  max-width: 100%;
+  max-height: 100vh;
+}
+.EquipmentSlots{
+  outline: 3px outset rgb(150, 143, 143);
+  aspect-ratio: 1;
+  /* max-height: 10%; */
+  height: 10vw;
+  width: 10vw;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+#EquipmentSlots > * {
+  max-height: inherit;
+}
+#EquipmentSlotsLeft{
+  /* max-height: 100%; */
+  /* place-items: center; */
+  /* aspect-ratio: 1; */
+  /* max-height:max-content; */
+  /* width: 100%; */
+  /* display: grid; */
+  /* grid-template-columns: 20px repeat(4, 1fr) 20px; */
+  /* grid-template-rows: 20px repeat(7, 1fr) 20px; */
+  /* gap: 5px 5px; */
+  grid-column: 2;
+}
+#EquipmentSlotsBottom{
+  grid-column: 3;
+}
+#EquipmentSlotsRight{
+  grid-column: 5;
+  max-height: 100%;
+}
+
+#Head{
+  /* outline: 1px solid white; */
+  /* grid-row: 2; */
+  grid-column: 2;
+
+}
+#Neck{
+  /* outline: 1px solid white; */
+  /* grid-row: 3; */
+  grid-column: 2;
+}
+#Shoulders{
+  /* outline: 1px solid white; */
+  /* grid-row: 4; */
+  grid-column: 2;
+}
+#Back{
+  /* outline: 1px solid white; */
+  /* grid-row: 5; */
+  grid-column: 2;
+}
+#Chest{
+  /* outline: 1px solid white; */
+  /* grid-row: 6; */
+  grid-column: 2;
+}
+#Bracers{
+  /* outline: 1px solid white; */
+  /* grid-row: 7; */
+  grid-column: 2;
+}
+#Gloves{
+  /* outline: 1px solid white; */
+  /* grid-row: 2; */
+  grid-column: 5;
+}
+#Belt{
+  /* outline: 1px solid white; */
+  /* grid-row: 3; */
+  grid-column: 5;
+}
+#Legs{
+  /* outline: 1px solid white; */
+  /* grid-row: 4; */
+  grid-column: 5;
+}
+#Feet{
+  /* outline: 1px solid white; */
+  /* grid-row: 5; */
+  grid-column: 5;
+}
+#Ring1{
+  /* outline: 1px solid white; */
+  /* grid-row: 6; */
+  grid-column: 5;
+}
+#Ring2{
+  /* outline: 1px solid white; */
+  /* grid-row: 7; */
+  grid-column: 5;
+}
+#Trinket1{
+  /* outline: 1px solid white; */
+  /* grid-row: 8; */
+  grid-column: 5;
+}
+#Trinket2{
+  /* outline: 1px solid white; */
+  /* grid-row: 8; */
+  grid-column: 2;
+}
+#MainHand{
+  outline: 1px solid white;
+  /* grid-row: 8; */
+  grid-column: 3;
+}
+#OffHand{
+  /* outline: 1px solid white; */
+  /* grid-row: 8; */
+  grid-column: 4;
+}
+#Stats{
+  display: grid;
+  outline: 2px solid white;
+  grid-column: 9 / 16;
+  grid-row: 5 / 9;
+}
+#Buttons{
+  /* display: grid; */
+  outline: 2px solid white;
+  grid-column: 9 / 16;
+  grid-row: 2 / 4;
+}
